@@ -1,0 +1,23 @@
+.counter {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 100px;
+
+  .actions {
+    text-align: center;
+    button {
+      font-size: 30px;
+      padding: 20px 50px;;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+  }
+
+  .display {
+    margin: 20px;
+    font-size: 150px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+

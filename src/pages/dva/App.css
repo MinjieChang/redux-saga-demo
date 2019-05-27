@@ -1,0 +1,16 @@
+.counter {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 100px; }
+  .counter .actions {
+    text-align: center; }
+    .counter .actions button {
+      font-size: 30px;
+      padding: 20px 50px;
+      margin: 0 10px;
+      cursor: pointer; }
+  .counter .display {
+    margin: 20px;
+    font-size: 150px;
+    text-align: center;
+    font-weight: bold; }
