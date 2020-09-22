@@ -11,7 +11,11 @@ const count = handleActions({
 
   DECREASE: ({ count }) => {
     return { count: count - 1 };
-  }
+  },
+
+  THUNK_INCREASE: ({ count }) => {
+    return { count: count + 1 };
+  },
 
 }, { count: 0 });
 

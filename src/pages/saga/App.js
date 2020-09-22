@@ -5,6 +5,7 @@ import Counter from './pages/Counter'
 import FetchApi from './pages/FetchApi'
 import SyncAction from './pages/SyncAction'
 import Flow from './pages/Flow'
+import Thunk from './pages/Thunk'
 import './App.css';
 
 
@@ -16,13 +17,13 @@ const App = (props) => {
       <div><Link to={`${match.path}/count`}>计数器_saga</Link></div>
       <div><Link to={`${match.path}/thunk`}>计数器_thunk</Link></div>
       <div><Link to={`${match.path}/fetchApi`}>捕获api调用</Link></div>
-      <div><Link to={`${match.path}/syncAction`}>捕获同步action</Link></div>
+      <div><Link to={`${match.path}/syncAction`}>select</Link></div>
       <br></br>
       <div style={{height: '20px'}}><Link to={`${match.path}/flow`}>流程控制</Link></div>
 
       <Switch>
         <Route exact path={`${path}/count`} component={Counter} />
-        <Route exact path={`${path}/thunk`} component={()=><div>thunk</div>} />
+        <Route exact path={`${path}/thunk`} component={Thunk} />
         <Route exact path={`${path}/fetchApi`} component={FetchApi} />
         <Route exact path={`${path}/syncAction`} component={SyncAction} />
         <Route exact path={`${path}/flow`} component={Flow} />
