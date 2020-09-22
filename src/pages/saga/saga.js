@@ -18,12 +18,13 @@ function* takeTask() {
 
 // ----------------------------  异步counter  -----------------------
 
-//不论 put 还是 call 都不执行任何 dispatch 或异步调用，它们只是简单地返回 plain Javascript 对象。
+// worker saga
 export function* incrementAsync() {
 	yield call(delay, 500) //  => { CALL: {fn: delay, args: [1000]}}
 	yield put({ type: 'INCREASE' }) // => { PUT: {type: 'INCREMENT'} }
 }
 
+// watcher saga
 export function* watchIncrementAsync() {
 	yield takeEvery('INCREASE_ASYNC', incrementAsync)
 }
